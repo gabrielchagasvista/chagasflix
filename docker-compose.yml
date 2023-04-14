@@ -8,5 +8,5 @@ services:
       - 81:80
     volumes:
     - type: bind
-      source: ./Projeto-Netflix
+      source: ./estag-flix
       target: /usr/local/apache2/htdocs/estag-flix
