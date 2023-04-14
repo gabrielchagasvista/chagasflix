@@ -18,7 +18,7 @@ BotaoEnviar.addEventListener("click", function(event) {
 
   // Código de verificação 
 
-  var pagina1 = "/home/gabriel.duarte/Documentos/Scripts/Projeto-Netflix/Tela_Inicial/index.html"
+  var pagina1 = "Tela_Inicial/index.html"
 
   if (valorNome == "Gab" && valorSenha == "123") {
     window.location.href = pagina1;
