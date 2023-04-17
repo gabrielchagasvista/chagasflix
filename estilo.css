@@ -1,71 +1,58 @@
+:root{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
 
 *{
-    margin: 0;
+    margin:0;
     padding:0;
+    box-sizing: border-box;
+    
 }
 
-#cabecalho, #conteudo, #rodape {
-    width: 960px;
-    margin: 0 auto;
-}
-
-#cabecalho{
-    height: 150px;
-}
-
-body {
-    background-color: rgb(255, 255, 255);
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-   
-}
-
-p {
-    font-size: 16px; /* tamanho da fonte */ 
-    margin-bottom: 1.5em;
-    line-height: 1.4em;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal; /* padrão de fonte */ 
-}
-
-a:link {
-    color: #0A79DF;
-    text-decoration: none; /* para os link não ficarem sublinhados*/
-}
-
-a:visited {
-    color:#30336B;
-}
-
-a:hover {
-    color: #6A89CC;
-}
-
-/* menu principal */ 
-
-#menu-principal{
-	padding-top: 30px;
-	padding-bottom: 30px;
-	text-align: center;
-	font-size: 20px;
+/*elementos base*/
+body{
+   background: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color:white;
 }
 
 
-#menu-principal li {
-	padding: 30px;
-	display: inline; /* deixar alinhado */ 
+header .container{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    
 }
 
-#menu-principal ul li a{
-	text-decoration: none;
-	color: black; /* cor das letras do menu */ 
+header .logo{
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-size:45px;
 }
 
-#menu-principal ul li a:hover{
-	text-decoration: none; /* tirar o sublinhado dos links */
-	color:#8395A7; /* cor do link quando eu passar o mouse*/
+header nav a{
+    text-decoration:none;
+    color:#ffffff;
+    margin-right: 50px;
 }
 
+
+header nav a:hover{
+    color:#ff0000;
+}
+.capa {
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url(img1.jpeg);
+
+    height:600px;
+    background-size:cover;
+ 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
