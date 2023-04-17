@@ -8,5 +8,5 @@ services:
       - 81:80
     volumes:
     - type: bind
-      source: ./estag-flix
+      source: .
       target: /usr/local/apache2/htdocs/estag-flix
