@@ -1,4 +1,5 @@
 FROM httpd:latest
 
-COPY * /usr/local/apache2/htdocs/estagflix/
+WORKDIR /usr/local/apache2/htdocs
+COPY . ./estagflix
 EXPOSE 81
