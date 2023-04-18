@@ -1,6 +1,6 @@
-FROM nginx:latest
+FROM httpd:latest
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /usr/local/apache2/htdocs/
 COPY . ./estagflix
 
 EXPOSE 81
