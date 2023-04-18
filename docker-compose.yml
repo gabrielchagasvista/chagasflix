@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql-estagflix
+    volumes:
+      - mysqldb:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: "$ROOT_PASSWORD"
+    networks:
+      - estagflix
+    ports:
+      - "4545:3306"
+
+  web:
+    build:
+      context: .
+    container_name: estagflix
+    restart: always
+    networks:
+      - estagflix
+    ports:
+      - "81:80"
+
+volumes:
+  mysqldb:
+
+networks:
+  estagflix:
+    driver: bridge
