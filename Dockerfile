@@ -1,14 +1,6 @@
-FROM ubuntu:latest
+FROM nginx:latest
 
-RUN apt update 
-RUN apt install apache2 -y 
-RUN apt install apache2-utils -y 
-RUN apt clean 
-
-WORKDIR /usr/local/apache2/htdocs
+WORKDIR /usr/share/nginx/html
 COPY . ./estagflix
 
 EXPOSE 81
-
-#CMD [“apache2ctl”, “-D”, “FOREGROUND”]
-CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
