@@ -22,7 +22,7 @@ services:
     networks:
       - estagflix
     ports:
-      - "88:80"
+      - "81:80"
 
 volumes:
   mysqldb:
