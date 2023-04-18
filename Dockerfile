@@ -10,4 +10,5 @@ COPY . ./estagflix
 
 EXPOSE 81
 
-CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+#CMD [“apache2ctl”, “-D”, “FOREGROUND”]
+CMD ["/usr/sbin/apache2ctl", "-D", "FOREGROUND"]
