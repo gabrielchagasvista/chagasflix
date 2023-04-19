@@ -18,7 +18,7 @@ BotaoEnviar.addEventListener("click", function(event) {
 
   // Código de verificação 
 
-  var pagina1 = "Tela_Inicial/index.html"
+  var pagina1 = "../pagina-filmes"
 
   if (valorNome == "Gab" && valorSenha == "123") {
     window.location.href = pagina1;
